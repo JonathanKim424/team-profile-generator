@@ -18,6 +18,7 @@ To use, run "node index" in the command line from the root folder. The applicati
 
 ![Application Screenshot](./assets/images/application-screenshot.jpg?raw=tru "Application Screenshot")
 
+Sample HTML file can be found in the /dist folder, named "profile.html":
 ![HTML Screenshot](./assets/images/html-screenshot.jpg?raw=tru "HTML Screenshot")
 
 Video:
