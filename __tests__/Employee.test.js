@@ -17,7 +17,7 @@ test("gets employee's name", () => {
 test("gets employee's id", () => {
     const employee = new Employee('Jared', 1, 'jared@fakemail.com');
 
-    expect(employee.getId()).toEqual(expect.stringContaining('1'));
+    expect(employee.getId()).toBe(1);
 });
 
 test("gets employee's email", () => {
