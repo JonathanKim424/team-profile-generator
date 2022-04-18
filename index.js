@@ -1,15 +1,3 @@
-const inquirer = require ('inquirer');
+const Prompt = require('./lib/Prompt');
 
-const startProfile = () => {
-    inquirer.prompt({
-        type: 'input',
-        name: 'name',
-        message: 'What is your name?'
-    });
-};
-
-const printProfile = (data) => {
-    console.log(data);
-};
-
-startProfile().then(printProfile);
+new Prompt().managerPrompt();
