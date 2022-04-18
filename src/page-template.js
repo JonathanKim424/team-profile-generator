@@ -1,3 +1,4 @@
+// Base HTML page template, injects cards based on user input
 const generatePage = (employees) => {
     return `
     <!DOCTYPE html>
@@ -29,6 +30,7 @@ const generatePage = (employees) => {
     `;
 };
 
+// Logic and template to display cards as well as a catch in case no inputs are given
 const generateCards = data => {
     if (!data) {
         return ``;
@@ -56,6 +58,7 @@ const generateCards = data => {
     `;
     }
 
+    // Array is built to join html blocks together for multiple cards
     const htmlArr = [];
 
     data.forEach(employee => {
@@ -84,6 +87,7 @@ const generateCards = data => {
     return htmlArr.join('');
 };
 
+// Logic to fill card with appropriate data based on employee role
 const generateEmployeeInfo = employeeInfo => {
     const employeeRole = employeeInfo.getRole();
     switch(employeeRole) {
@@ -98,6 +102,7 @@ const generateEmployeeInfo = employeeInfo => {
     }
 };
 
+// Generate icon based on employee role
 const generateEmployeeIcon = employeeRole => {
     switch(employeeRole) {
         case 'Manager':
