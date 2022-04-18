@@ -19,7 +19,7 @@ const generatePage = (employees) => {
         </header>
 
         <main class="container p-2">
-            <div class="row row-cols-3 flex-wrap justify-content-center">
+            <div class="w-75 row row-cols-3 flex-wrap justify-content-center mx-auto">
                 ${generateCards(employees)}
             </div>
         </main>
@@ -38,7 +38,7 @@ const generateCards = data => {
 
     if (data.length === 1) {
         return `
-        <div class="col pt-3" style="width: 300px;">
+        <div class="col pt-3" style="width: 310px;">
             <div class="card shadow">
                 <div class="card-body bg-primary text-white rounded-top">
                     <h5 class="card-title">${data[0].getName()}</h5>
@@ -63,7 +63,7 @@ const generateCards = data => {
 
     data.forEach(employee => {
         const htmlCard = `
-            <div class="col pt-3" style="width: 300px;">
+            <div class="col pt-3" style="width: 310px;">
                 <div class="card shadow">
                     <div class="card-body bg-primary text-white rounded-top">
                         <h5 class="card-title">${employee.getName()}</h5>

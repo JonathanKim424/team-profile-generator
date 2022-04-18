@@ -18,6 +18,13 @@ To use, run "node index" in the command line from the root folder. The applicati
 
 ![Application Screenshot](./assets/images/application-screenshot.jpg?raw=tru "Application Screenshot")
 
+![HTML Screenshot](./assets/images/html-screenshot.jpg?raw=tru "HTML Screenshot")
+
+Video:
+
+## Tests
+Tests are available for the Employee, Manager, Engineer, and Intern classes. Tests can be found uner the /__tests__ folder and are executed via Jest. Run "npm run test" in the command line. Available tests will check for proper object and method generation for each class.
+
 ## Credits
 Made by Jonathan Kim
 
